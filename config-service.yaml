@@ -1,4 +1,4 @@
 simple_radius:simple_radius:
   - device:
-    - c2
-    radius_server_ip: 3.3.3.3
+    - c1
+    radius_server_ip: 2.2.2.2
