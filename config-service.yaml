@@ -1,5 +1,4 @@
-config:
-  simple_radius:simple_radius:
-    - device:
-      - c2
-      radius_server_ip: 3.3.3.3
+simple_radius:simple_radius:
+  - device:
+    - c2
+    radius_server_ip: 3.3.3.3
