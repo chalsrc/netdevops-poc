@@ -5,3 +5,4 @@ device:
       Loopback:
       - name: "1"
         description: "Testing description"
+        __state: absent
