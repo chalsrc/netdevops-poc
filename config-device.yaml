@@ -4,5 +4,5 @@ device:
     tailf-ned-cisco-ios:interface:
       Loopback:
       - name: "1"
-        description: "Created by Ansible!"
+        description: "Created by Ansible !"
         __state: absent
