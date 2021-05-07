@@ -1,0 +1,22 @@
+- name: Play book to try Raw CLI directly
+  hosts: all
+  connection: local
+  gather_facts: no
+
+  vars:
+    cli:
+      username: admin
+      password: Wireless123
+
+  tasks:
+  - name: NSO global variables
+    include_vars:
+      file: nso.yaml
+      name: nso
+
+  - name: configure interface settings
+    ios_config:
+      provider: "{{ cli }}"
+      lines:
+      - description via ios_config
+      parents: interface Loopback244
