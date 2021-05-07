@@ -1,4 +1,4 @@
-- name: Play book to try Raw CLI directly
+- name: Play book to use ios_config module and config device directly
   hosts: all
   connection: local
   gather_facts: no
@@ -18,5 +18,5 @@
     ios_config:
       provider: "{{ cli }}"
       lines:
-      - description is connfigure via Jenkins through ios module
+      - description is connfigure via Jenkins
       parents: interface Loopback244
