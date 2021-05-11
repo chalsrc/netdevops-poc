@@ -18,5 +18,5 @@
     ios_config:
       provider: "{{ cli }}"
       lines:
-      - demo to Mohan
+      - description is connfigure via Jenkins through ios module
       parents: interface Loopback244
