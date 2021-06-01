@@ -18,7 +18,7 @@
     ios_config:
       provider: "{{ cli }}"
       lines:
-      - description is connfigure via Jenkins through ios module
+      - description is connfigure via Jenkins and pyats execution
       parents: interface Loopback244
 
   - name: Cisco Webex Teams - Markdown Message to a Room
@@ -26,5 +26,5 @@
       recipient_type: roomId
       recipient_id: Y2lzY29zcGFyazovL3VzL1JPT00vOTczMjM0MzAtYjJmYS0xMWViLWJlN2YtZWJiMWM0MjQ5YTVm
       msg_type: markdown
-      personal_token: YTNlZGU0N2EtYTFjOC00Nzg4LTkxOGMtYzkyMjlmMTBlZmI1ZWIwMWQ4MjUtOTAz_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f
+      personal_token: MDczMDc0MTYtYzk1OS00ODgxLTlhZDEtMzIyNzllZDJiMjhiMTU5N2VjYjYtMmJh_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f
       msg: "**Above ios configuration job has been executed successfully**"
