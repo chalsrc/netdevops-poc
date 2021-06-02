@@ -22,4 +22,4 @@
       recipient_id: "{{ nso.room }}"
       msg_type: markdown
       personal_token: "{{ nso.token }}"
-      msg: "**Above ios configuration job has been executed successfully**"
+      msg: "**config-cli job: config has been executed successfully**"
