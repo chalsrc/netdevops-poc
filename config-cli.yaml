@@ -3,11 +3,6 @@
   connection: local
   gather_facts: no
 
-  vars:
-    cli:
-      username: admin
-      password: Wireless123
-
   tasks:
   - name: NSO global variables
     include_vars:
@@ -16,7 +11,7 @@
 
   - name: configure interface settings
     ios_config:
-      provider: "{{ cli }}"
+      provider: "{{ nso.cli }}"
       lines:
       - description is connfigure via Jenkins and pyats execution
       parents: interface Loopback244
@@ -24,7 +19,7 @@
   - name: Cisco Webex Teams - Markdown Message to a Room
     community.general.cisco_webex:
       recipient_type: roomId
-      recipient_id: Y2lzY29zcGFyazovL3VzL1JPT00vOTczMjM0MzAtYjJmYS0xMWViLWJlN2YtZWJiMWM0MjQ5YTVm
+      recipient_id: "{{ nso.room }}"
       msg_type: markdown
-      personal_token: MDczMDc0MTYtYzk1OS00ODgxLTlhZDEtMzIyNzllZDJiMjhiMTU5N2VjYjYtMmJh_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f
+      personal_token: "{{ nso.token }}"
       msg: "**Above ios configuration job has been executed successfully**"
