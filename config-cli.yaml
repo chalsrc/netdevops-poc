@@ -13,7 +13,7 @@
     ios_config:
       provider: "{{ nso.cli }}"
       lines:
-      - description is connfigure via Jenkins and pyats execution
+      - description my new desc
       parents: interface Loopback244
 
   - name: Cisco Webex Teams - Markdown Message to a Room
