@@ -4,4 +4,4 @@ device:
     tailf-ned-cisco-ios:interface:
       Loopback:
       - name: "1"
-        __state: absent
+        description: description of loopback1
