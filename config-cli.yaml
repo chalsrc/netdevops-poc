@@ -1,4 +1,4 @@
-- name: Play book to use ios_config module and config directly to device1
+- name: Play book to use ios_config module and config directly to device
   hosts: all
   connection: local
   gather_facts: no
